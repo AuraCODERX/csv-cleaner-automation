@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 
 load_dotenv()
-API_KEY = os.getenv("2YXUUcpuTqzfkggA0ZJFsfBpqszTLTY42yNnF4Lr")
+API_KEY = os.getenv("Api_key")
 BASE_URL = "https://api.nasa.gov/planetary/apod"
 
 def get_date_range(days: int):
