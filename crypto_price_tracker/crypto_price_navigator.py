@@ -8,7 +8,7 @@ url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 
 headers = {
     "Accepts": "application/json",
-    "X-CMC_PRO_API_KEY": "API_KEY"
+    "X-CMC_PRO_API_KEY": API_KEY
 }
 
 params = {
