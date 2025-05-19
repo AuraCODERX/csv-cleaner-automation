@@ -1,7 +1,0 @@
-try:
-    with open("prachi_project.txt", "a") as f:
-        f.write("hey prachi,this is your hero jatin!")
-except FileNotFoundError:
-    print("prachi's love file is missing, creating one....")
-    with open("prachi_project.txt", "w") as f:
-        f.write("I love you prachi.")
