@@ -26,7 +26,7 @@ async def fetch_apod(client, date):
             "date": date,
             "title": data.get("title"),
             "url": data.get("url"),
-            "explanation": data.get("explanation")[:100] + "..."  # Short summary
+            "explanation": data.get("explanation")[:100]
         }
     except httpx.HTTPError as e:
         return {"date": date, "error": str(e)}
@@ -40,13 +40,13 @@ async def main():
 
 
     for res in results:
-        print(f"\nDate: {res['date']}")
-        if 'error' in res:
-            print(f"Error: {res['error']}")
+        print(f"\nDate: {res["date"]}")
+        if "error" in res:
+            print(f"Error: {res["error"]}")
         else:
-            print(f"Title: {res['title']}")
-            print(f"URL: {res['url']}")
-            print(f"Summary: {res['explanation']}")
+            print(f"Title: {res["title"]}")
+            print(f"URL: {res["url"]}")
+            print(f"Summary: {res["explanation"]}")
 
 if __name__ == "__main__":
     asyncio.run(main())
