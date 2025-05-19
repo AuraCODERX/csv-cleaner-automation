@@ -3,8 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY = os.getenv("88674d79-27a4-40ba-a37f-0782c5c44a61")
-
+API_KEY = os.getenv("API_KEY")
 url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 
 headers = {
